@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+    <h1> Hello! Game, on!</h1>
+
+    <p>
+      {{#letters}}
+      <span>{{.}}</span>
+      {{/letters}}
+    </p>
+
+  
+  <form action="/game" method="post">
+  
+    <input type="text" name="guess">
+    <button type="submit"> Make a guess </button>
+  
+  </form>
+  
+</body>
+</html>
